@@ -3,11 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import CommentDetail from './CommentDetail';
 import faker from '@faker-js/faker';
+import ApprovalCard from './ApprovalCard';
 
 // Create a react component
 const App = () => {
   return (
     <div className='ui container comments'>
+      <ApprovalCard />
       <CommentDetail imageSrc={faker.image.avatar()} author='Bob' timeAgo='Today at 4:00PM' commentText='Nice blog.' />
       <CommentDetail
         imageSrc={faker.image.avatar()}
