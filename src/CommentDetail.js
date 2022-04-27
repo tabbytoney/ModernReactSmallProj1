@@ -1,7 +1,9 @@
 import React from 'react';
 import faker from '@faker-js/faker';
 
-const CommentDetail = () => {
+// This props is prety  much an object with the properties/values inside this component,
+// such as author
+const CommentDetail = (props) => {
   return (
     <div className='comment'>
       <a href='/' className='avatar'>
@@ -9,7 +11,7 @@ const CommentDetail = () => {
       </a>
       <div className='content'>
         <a href='/' className='author'>
-          Bob
+          {props.author}
         </a>
         <div className='metadata'>
           <span className='date'>Today at 6:00PM</span>
