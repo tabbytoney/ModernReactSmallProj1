@@ -1,10 +1,15 @@
 // Import React and React Dom libraries
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import CommentDetail from './CommentDetail';
 
 // Create a react component
 const App = () => {
-  return <div className='ui container comments'></div>;
+  return (
+    <div className='ui container comments'>
+      <CommentDetail />
+    </div>
+  );
 };
 
 // Take the react component and show it on the screen
